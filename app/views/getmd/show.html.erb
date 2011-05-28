@@ -1,0 +1,8 @@
+<div>
+	<ul>
+	<% @md.each_pair do |key, value| %>
+	<% if value.nil? then value = "NULL" end %>
+		<li><%= key + " => " +value %></li>
+	<% end %>
+	</ul>
+</div>

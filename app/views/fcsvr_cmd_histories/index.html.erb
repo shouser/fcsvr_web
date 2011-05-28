@@ -1,0 +1,19 @@
+<h1>Listing Final Cut Server Command History</h1>
+ 
+<table>
+  <tr>
+		<th>Command Executed</th>
+		<th>Raw Response</th>
+		<th>Execution Time</th>
+		<th>Dry Run</th>
+	</tr>
+	
+<% @fcsvr_cmd_history.each do |fcsvr_cmd| %>
+	<tr>
+		<td><%= fcsvr_cmd.cmd_executed %></td>
+		<td><%= fcsvr_cmd.raw_response %></td>
+		<td><%= fcsvr_cmd.created_at %></td>
+		<td><%= fcsvr_cmd.dry_run %></td>
+	</tr>
+<% end %>
+</table>

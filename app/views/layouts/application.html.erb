@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>fcsvr_web</title>
+  <%= stylesheet_link_tag :flutie, 'screen', :media => 'all', :cache => true %>
+  <%= csrf_meta_tag %>
+</head>
+<body class="<%= body_class %>">
+
+  <%= render :partial => 'shared/flashes' -%>
+  <%= yield %>
+  <%= render :partial => 'shared/javascript' %>
+</body>
+</html>

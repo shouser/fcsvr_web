@@ -1,0 +1,18 @@
+development: &default
+  adapter: sqlite3 
+  database: db/fcsvr_web_development
+  timeout: 5000
+  encoding: utf8
+
+test: &test
+  <<: *default
+  database: db/fcsvr_web_test
+
+production: &production
+  adapter: sqlite3
+  database: db/fcsvr_web_production
+  timeout: 5000
+  encoding: utf8
+
+cucumber:
+  <<: *test
