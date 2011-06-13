@@ -6,6 +6,7 @@ gem "rake", "~> 0.8.7"
 gem "clearance", "~> 0.10.1"
 gem "haml"
 gem "sass"
+gem "open4"
 gem "high_voltage"
 gem "hoptoad_notifier"
 gem "RedCloth", :require => "redcloth"
@@ -17,7 +18,9 @@ gem "formtastic"
 gem "flutie"
 gem "dynamic_form"
 gem "sqlite3"
-gem "fcsvr_connector", :path => "#{File.expand_path(__FILE__)}/../vendor/gems/fcsvr_connector-0.1.6"
+gem "fcs", :path => "#{File.expand_path(__FILE__)}/../vendor/gems/fcs-0.1.6"
+gem "net-ssh"
+gem "json"
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.

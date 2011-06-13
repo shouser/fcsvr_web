@@ -5,6 +5,8 @@ FcsvrWeb::Application.routes.draw do
 
   resources :fcsvr_cmd_histories, :only => [:index]
   match '/getmd/search(.:format)' => 'getmd#search'
+  match '/entity/search(.:format)' => 'entity#search'
+  match '/search/:type(.:format)' => 'entity#search'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
