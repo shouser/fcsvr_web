@@ -1,7 +1,7 @@
 PATH
-  remote: vendor/gems/fcs-0.1.6
+  remote: vendor/gems/fcs-0.1.8
   specs:
-    fcs (0.1.6)
+    fcs (0.1.8)
 
 GEM
   remote: http://rubygems.org/

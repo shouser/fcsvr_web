@@ -18,7 +18,7 @@ gem "formtastic"
 gem "flutie"
 gem "dynamic_form"
 gem "sqlite3"
-gem "fcs", :path => "#{File.expand_path(__FILE__)}/../vendor/gems/fcs-0.1.6"
+gem "fcs", :path => "#{File.expand_path(__FILE__)}/../vendor/gems/fcs-0.1.8"
 gem "net-ssh"
 gem "json"
 
