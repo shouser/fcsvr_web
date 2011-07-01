@@ -6,8 +6,11 @@ FcsvrWeb::Application.routes.draw do
   resources :fcsvr_cmd_histories, :only => [:index]
   match '/getmd/search(.:format)' => 'getmd#search'
   match '/entity/search(.:format)' => 'entity#search'
-  match '/search/(:type(.:format))' => 'entity#search'
+  match '/search(/:type(.:format))' => 'entity#search'
   match '/asset/get_rep_links(/:id(.:format))' => 'entity#get_asset_reps'
+  match '/project/get_tree(/:id(.:format))' => 'entity#get_project_tree'
+  match '/asset/create(.:format)' => 'entity#create'
+  match '/asset/create_with_rep_links(.:format)' => 'entity#create_with_rep_links'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
